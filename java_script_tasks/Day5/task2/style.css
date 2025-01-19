@@ -1,0 +1,41 @@
+form{
+    display: block;
+}
+.ide{
+    display: block;
+    padding: auto;
+    margin: 10px;
+}
+.gender{
+    display: inline;
+    padding: 10px;
+}
+.sports{
+    display: inline;
+    padding: 10px;
+    
+}
+#country{
+    display: inline;
+    padding: 10px;
+    width: 200px;
+}
+.submit{
+    display: inline-block;
+    width: 100px;
+    border-radius:10%;
+    background-color: green;
+    margin-left: 200px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.reset{
+    display: inline;
+    width: 100px;
+    border-radius:10%;
+    background-color:red;
+    /* margin-left: 20px; */
+    font-weight: bold;
+    text-align: center;   
+}

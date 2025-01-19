@@ -1,0 +1,129 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: gray;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+main {
+    padding: 20px;
+}
+
+main h2 {
+    color: #333;
+    transition: color 0.3s;
+}
+
+section {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+section p, section ul {
+    font-size: 16px;
+}
+
+
+section:hover {
+    background-color: #f0f0f0;
+}
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header.dark-mode {
+    background-color: #333;
+}
+
+button.dark-mode {
+    background-color: #555;
+}
+
+button.dark-mode:hover {
+    background-color: #777;
+}
+
+main.dark-mode {
+    background-color: #222;
+}
+
+main.dark-mode h2 {
+    color: #fff;
+}
+
+section.dark-mode {
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+}
+
+section.dark-mode h2 {
+    color: #fff;
+}
+
+
+ul li {
+    margin-bottom: 10px;
+    transition: color 0.3s, transform 0.2s;
+}
+
+ul li:hover {
+    color: #ff5722;
+    transform: translateX(10px);
+}
+
+
+body, header, button, main, section {
+    transition: background-color 0.5s, color 0.5s;
+}

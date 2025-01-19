@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: antiquewhite;
+}
+
+th, td {
+    border: 3px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+.delete {
+    color: red;
+    cursor: pointer;
+}
+
+.delete:hover {
+    text-decoration: underline;
+    
+}

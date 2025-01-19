@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Students Table</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h1>Student Table</h1>
+    <div>
+        <input type="text" id="name" placeholder="Enter student name">
+        <div id="errorName" class="error"></div>
+        <br>
+        <input type="number" id="age" placeholder="Enter student age">
+        <div id="errorAge" class="error"></div>
+        <br>
+        <button onclick="addStudent()">Add Student</button>
+    </div>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="studentTable">
+        </tbody>
+    </table>
+
+    
+    <script src="./main.js"></script>
+</body>
+</html>
+
+
+

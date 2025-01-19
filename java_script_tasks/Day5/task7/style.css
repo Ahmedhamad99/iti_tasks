@@ -1,0 +1,56 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.slider {
+    width: 800px;
+    text-align: center;
+    border: 2px solid green;
+    border-radius: 10px;
+    background: wheat;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.slider img.active {
+    display: block;
+}
+
+.manage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.manage button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.manage .previous, .manage .next {
+    background-color: green;
+    color: wheat;
+}
+
+.manage .play {
+    background-color: green;
+    color: white;
+}
+
+.manage .stop {
+    background-color: red;
+    color: wheat;
+}

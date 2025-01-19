@@ -1,0 +1,26 @@
+table, tr, th,td{
+    width: 500px;
+    margin: 100px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: azure;
+}
+
+.view{
+    color: red;
+    cursor: pointer;
+}
+div{
+    border: 3px black;
+    border-style: solid;
+    margin-left: 100px;
+    width: 400px;
+    background-color: aliceblue;
+    
+
+}
+p{
+    display: inline;
+    margin: 10px;
+    color: red;
+}

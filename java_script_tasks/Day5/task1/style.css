@@ -1,0 +1,19 @@
+#typein{
+    text-align: justify;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    font-size: 14px;
+    padding: auto;
+    color: black;
+}
+.add{
+    width: 200px;
+    height: 600px;
+    border: 1px;
+    
+    margin: 20px;
+    padding: 10px;
+    font-size: 25px;
+    color:black(9, 87, 155);
+}
