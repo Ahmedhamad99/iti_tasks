@@ -1,0 +1,106 @@
+.div1  {
+    text-align: center;
+    height: 100px;
+    width:100%;
+    padding: 25px;
+    font-size: 20px;
+}
+
+hr{
+    height: 1px;
+    width: 80%;
+    color: rgb(0, 0, 0);
+    
+}
+
+.container{
+    text-align: center;
+    height: 250px;
+    width:100%;
+    padding: 25px;
+    font-size: 20px;
+    position: relative;
+}
+.e1 ,.e2 ,.e3,.e4 {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    width: 200px ;
+    height: 80%;
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+
+}  
+.p1,.p2 ,.p3,.p4{
+position: absolute;
+top: 60px;
+left: 50px;
+}
+.a1 {
+    text-transform: uppercase;
+    color: orange;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    text-decoration:none;
+}
+/*
+the 8 divs
+*/
+.p-div{
+    width: 90%;
+    height: 450px;
+    margin: auto;
+}
+.d1,.d2 ,.d3,.d4,.d5,.d6,.d7,.d8{
+    height: 180px;
+    width:20% ;
+    display: inline-block;
+    padding: 2px;
+    margin: 25px;
+    position: relative;
+ 
+}
+.span{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    color: aliceblue;
+    background-color: black;
+    width:  40px;
+    height: 40px;
+    display: inline-block;
+}
+h2{
+    display: inline-block;
+}
+
+.link{
+    color: orange;
+    position: absolute;
+    font-size: 23px; 
+    bottom: 20px;
+    right: 20px;
+}
+
+.footer{
+    width: 100%;
+    height:50px;
+    background-color: black;
+    color: aliceblue;
+    position: sticky;   
+    bottom: 0px;
+}
+.para1,.para2{
+    display: inline-block;
+
+}
+.para2{
+    float: right;
+    margin-right: 50px;
+ 
+}
+.para1{
+    margin-left: 50px;
+}

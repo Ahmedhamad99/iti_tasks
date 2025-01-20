@@ -1,0 +1,87 @@
+/* .parent .child{
+    background-color: teal;
+    color: white;
+    padding: 20px;
+    width: 20%;
+    display: inline-block;
+   
+    
+
+}
+
+.first{
+    /* visibility: hidden; */
+    /* opacity: 0.3; */
+    /* float: left;
+}
+.second{
+    float: left;
+}
+.third{
+    float: right;
+}
+.parent{
+    background-color: yellow;
+}
+.clear{
+    clear: both;
+} */ 
+/* span{
+    background-color: teal;
+    color: white;
+    width: 400px;
+    margin: 10px;
+    display: inline;
+} */
+
+/* div{
+    background-color: teal;
+    height: 200px;
+    height: 100vh;
+    background-image: url(client1.PNG);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 100% 100%;
+    
+} */
+.grand{
+    background-color: blue;
+    width: 300px;
+    padding: 10px;
+    position: relative;
+}
+.parent{
+    background-color: yellow;
+  
+    padding: 20px;
+    /* position: relative; */
+}
+
+.parent div{
+    color: white;
+    padding: 20px;
+}
+
+.child1
+{
+    background-color: brown;
+    z-index: 3;
+    
+}
+.child2{
+    background-color: aquamarine;
+    position: sticky;
+    top: 10px;
+    z-index: 5;
+
+
+}
+.child3{
+    background-color: blue;
+    z-index: 0;
+   
+    
+}
+body{
+    height: 3000px;
+}
