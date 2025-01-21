@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1731773856 source:c:\users\hp\desktop\projects\assingmentd5\main.cpp
+	<iostream>
+	"graphics.h"
+
+1731486480 c:\users\hp\desktop\projects\assingmentd5\graphics.h
+	<iostream>
+	<math.h>
+	<windows.h>
+	<Windows.h>
+

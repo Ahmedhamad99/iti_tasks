@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1731510200 source:c:\users\hp\desktop\projects\assingmentd4\main.cpp
+	<iostream>
+	"graphics.h"
+
+1731486480 c:\users\hp\desktop\projects\assingmentd4\graphics.h
+	<iostream>
+	<math.h>
+	<windows.h>
+	<Windows.h>
+

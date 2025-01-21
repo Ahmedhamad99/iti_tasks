@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1731842936 source:c:\users\hp\desktop\projects\ass2_d6\main.cpp
+	<iostream>
+	"graphics.h"
+
+1731486480 c:\users\hp\desktop\projects\ass2_d6\graphics.h
+	<iostream>
+	<math.h>
+	<windows.h>
+	<Windows.h>
+
