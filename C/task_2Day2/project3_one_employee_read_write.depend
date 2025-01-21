@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1729425653 source:c:\users\hp\desktop\projects\project3_one_employee_read_write\main.c
+	<stdio.h>
+	<stdlib.h>
+
