@@ -1,0 +1,494 @@
+/* ==============preloader========= */
+
+
+.preloader{
+    background-color: #e5f5f9;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.preloader-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color:#1f1d1d;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    box-shadow: 0px 1px 5px rgba(35, 181, 185, 0.15);
+    box-shadow: 0px 1px 5px rgba(10, 32, 33, 0.15);
+    border: 5px solid #fff;
+    border-top-color: #be9278;
+    animation: spin 5s infinite;
+  
+  }
+  
+  .preloader img {
+    position: absolute;
+    top: calc(50% - 21px);
+    left: calc(50% - 21px);
+  }
+  
+  
+  @keyframes spin {
+    from {
+      rotate: 0deg;
+    }
+  
+    to {
+      rotate: 360deg;
+    }
+  }
+/* =========nav============ */
+a{
+    text-decoration: none;
+    color: rgb(162, 163, 163);
+}
+li{
+    list-style-type: none;
+}
+nav{
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+    transition: top 0.7 ease;
+    opacity: 1;
+}
+nav .section-little{
+    position: relative;
+    top:10px;
+    left:50px ;
+    font-size: 25px;
+
+}
+.section-little a:hover{
+    color: #FF4400;
+}
+nav section ul li a:hover{
+    color: #FF4400;;
+}
+
+nav .section-links{
+    width: 45%;
+    font-size: 20px;
+
+}
+
+nav .section-links ul li{
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+/* =================slider============== */
+
+
+.slide-shadow {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px; 
+}
+
+
+.slide-shadow section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+}
+
+
+.slide-shadow section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+}
+
+
+.slide-shadow section [class^="content-slid"] {
+    position: absolute;
+    top: 10%; 
+    left: 5%; 
+    font-size: 2vw; 
+    font-weight: 500;
+    color: azure;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 400px;
+}
+
+
+.slide-shadow section [class^="content-slid"] h1 {
+    font-size: 5vw; 
+}
+
+.slide-shadow section [class^="content-slid"] a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 1.2vw; 
+    text-align: center;
+}
+
+.slide-shadow section [class^="content-slid"] a:hover {
+    background-color: #FF4400;
+}
+
+
+.slide-shadow section.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+
+.slider-controls {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+    border: 1px;
+}
+
+.slider-controls .dot {
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.slider-controls .dot.active {
+    background: #FF4400;
+}
+
+/* ==============fashion======= */
+
+.let-start{
+    position: relative;
+    top:70px;
+    bottom: 35px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 35px;
+
+}
+
+
+
+
+.slid-content-1,.slid-content-2{
+    width: 80%;
+    margin: auto;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.slid-content-1 .para,.slid-content-2{
+    position: relative;
+    left: 30px;
+    top:30px;
+    
+}
+
+.slid-content-1 .para h3,.slid-content-2 .para h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+.slid-content-1 .para p,.slid-content-2 .para p{
+    font-size: 20px;
+    color: rgb(159, 159, 157);
+}
+
+.slid-content-1 section img, .slid-content-2 section img{
+    width: 500px;
+    height: 500px;
+}
+.slid-content-2 section img{
+    margin-right: 25px;
+}
+.slid-content-1 section img{
+    margin-left: 35px;
+}
+
+
+.main-section > section {
+    display: none; 
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.main-section > section.active {
+    display: flex; 
+    opacity: 1;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* =========================== */
+
+.video{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.video video{
+    position: relative;
+    left: 30px;
+    width: 800px;
+
+    box-shadow: 0px 0px 80px rgba(197, 104, 104, 0.3);
+
+
+}
+
+.video section{
+    position: relative;
+    left: 50px;
+    top:100px;
+    font-weight: 700;
+    width: 320px;
+}
+
+.video section h3{
+    font-size: 50px;
+}
+
+.video section h3 span{
+    color: #FF4400;
+}
+.video section h3:hover{
+    cursor: pointer;
+    color: #FF4400;
+
+}
+
+
+/* =========shop===============*/
+
+
+
+
+.ret-shop{
+    position: relative;
+    top:40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e5f5f9;
+}
+
+
+.ret-shop .cont{
+    position: relative;
+    margin-top: 100px;
+    margin-right: 110px;
+    font-size: 20px;
+    
+}
+.ret-shop .cont h2{
+    font-size: 30px;
+    font-weight: 1000;
+}
+.ret-shop .cont p{
+    font-size: 20px;
+    color:rgb(132, 140, 147) ;
+}
+.ret-shop .img img{
+    width: 600px;
+    height: 400px;
+    
+}
+
+
+
+/* ===========Featured=========== */
+
+.Featured{
+ 
+    position: relative;
+    margin-top: 130px;
+    display: flex;
+   justify-content: center;
+}
+.Featured h2{
+    position: relative;
+    margin-top: 10px;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.product-s {
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0; 
+    transform: translateY(100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+
+.product-s.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.product-s .coolect-1,
+.product-s .coolect-2,
+.product-s .coolect-3 {
+    opacity: 0;
+    transform: translateY(80px);
+    animation: moveup 1s ease-in-out forwards;
+}
+
+
+.product-s .coolect-1 { animation-delay: 0.3s; }
+.product-s .coolect-2 { animation-delay: 0.7s; }
+.product-s .coolect-3 { animation-delay: 0.9s; }
+
+.product-s .coolect-1 section img,
+.product-s .coolect-2 section img,
+.product-s .coolect-3 section img {
+    width: 350px;
+    height: 350px;
+    background-color: #b18989;
+    cursor: pointer;
+}
+
+.product-s .coolect-1 section h3,
+.product-s .coolect-2 section h3,
+.product-s .coolect-3 section h3 {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.product-s .coolect-1 section p,
+.product-s .coolect-2 section p,
+.product-s .coolect-3 section p {
+    color: rgb(163, 162, 162);
+}
+
+
+.product-s .coolect-1 section img:hover,
+.product-s .coolect-2 section img:hover,
+.product-s .coolect-3 section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 80px rgba(173, 99, 99, 0.3);
+}
+
+.product-s .coolect-1 section h3:hover,
+.product-s .coolect-2 section h3:hover,
+.product-s .coolect-3 section h3:hover {
+    cursor: pointer;
+    color: #FF4400;
+}
+
+::-moz-selection {
+    background-color: #FF4400;
+    color: white;
+}
+
+
+@keyframes moveup {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* =====footer============= */
+
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    position: relative;
+    top:100px;
+    
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    
+ 
+}
+footer section{
+    width: 20%;
+    
+}
+footer section h3{
+    /* margin-right: 50px; */
+
+    color: #e5f5f9;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    
+
+}
+footer section p{
+    width: 100%;
+    color: #e5f5f9;
+    margin-left: 40px;
+}
+footer section ul li{
+    margin-left: 40px;
+    list-style-type: none;
+    
+}
+
+footer section ul li a{
+    text-decoration: none;
+    color: rgb(162, 163, 163);
+}
+footer .Social ul li{
+    position: relative;
+    display: inline-block;
+    margin-left:10px ;
+}
+footer .Social h3{
+    margin-right: 50px;
+}
+footer section h3 #littel:hover{
+        cursor: pointer;
+        color: #FF4400;
+}
+
+
+footer section ul li a:hover{
+    color:white;
+}

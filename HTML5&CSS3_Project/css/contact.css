@@ -1,0 +1,150 @@
+.header{
+    position: relative;
+    display: flex;
+
+}
+.header section{
+    width: 50%;
+    height: 600px;
+}
+
+.header section img{
+    width: 100%;
+    height: 100%;
+    
+}
+.header section{
+    background-color: #e5f5f9;
+}
+.header section h1{
+    position: relative;
+    display: inline;
+    text-align: center;
+    margin: 20px;
+
+    font-size: 65px;
+    top: 200px;
+    left: 150px;
+    color: black;
+}
+
+.header section .h1-1{
+    margin-top: 100px;
+    margin-right: 50px;
+    color: #FF4400;
+    
+}
+
+.header section .h1-2{
+    margin-top: 100px;
+    margin-right: 50px;
+    color: black;   
+}
+/* ==========lets========= */
+.lets h1{
+    font-size: 50px;
+    margin-left:20px ;
+    margin-bottom: 30px;
+}
+
+.lets h1 span{
+    color: #FF4400;
+
+}
+
+.section-main{
+    display: flex;
+    justify-content: space-between;
+}
+.social-spart{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    right: 150px;
+    top:150px
+}
+.social-spart .social-spart1{
+    position: relative;
+   
+
+    
+}
+.section-main .social-spart2 section a{
+    margin-right: 10px;
+    cursor: pointer;
+    color: black;
+}
+.section-main .social-spart2 section a:hover{
+    color: #FF4400;
+}
+.section-main .social-spart1 section{
+   margin-right: 30px;
+   margin-bottom: 80px;
+   border-right: 3px rgb(155, 152, 152) solid;
+}
+.section-main .social-spart2 section{
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+.section-main .social-spart2 section h3,
+.section-main .social-spart1 section h3
+{
+    margin-bottom: 30px;
+}
+
+.section-main .social-spart2 section ul li{
+    list-style-type: none;
+   
+}
+.section-main .social-spart2 section ul {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: -40px;
+}
+.section-main .social-spart2 section ul li a{
+    text-decoration: none;
+}
+section .input-s{
+ display: inline-block;   
+}
+section .input-s input{
+    display: block;
+    position: relative;
+    margin-left: 30px;
+    width: 450px;
+    height: calc(3.5rem + 2px);
+    padding: 1rem .75rem;
+    margin-bottom: 40px;
+    border-radius: .25rem;
+    opacity: 1;
+}
+section .input-s  textarea{
+    padding: 1rem .75rem;
+    width: 450px;
+    height: 200px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    color: #212529;
+    border-radius: .25rem;
+    margin-left: 30px;
+    opacity: 1;
+
+}
+
+section .input-s button{
+    display: block;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    line-height: 1.5;
+    color: white;
+    background-color: black;
+    border-radius: 100px;
+}
+section .input-s button:hover{
+    background-color: #FF4400;
+}
+

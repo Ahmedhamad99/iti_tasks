@@ -1,0 +1,127 @@
+.header{
+    position: relative;
+    top:20px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+.header section{
+    width: 50%;
+    height: 500px;
+}
+.header .h1 .h1-1{
+    margin-top: 150px;
+    margin-left: 70px;
+    font-size: 60px;
+    font-weight: 600;
+    color:#FF4400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+.header .h1 .h1-2{
+    margin-top: 50px;
+    margin-left: 70px;
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+/* =============== */
+
+
+section h2{
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 130px;
+    margin-bottom: 50px;
+    font-style: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 50px;
+}
+
+/* ===============products=========== */
+
+
+.product {
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0; 
+    transform: translateY(100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+
+.product.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.product .colect-1,
+.product .colect-2,
+.product .colect-3 {
+    opacity: 0;
+    transform: translateY(80px);
+    animation: moveup 1s ease-in-out forwards;
+}
+
+
+.product .colect-1 { animation-delay: 0.3s; }
+.product .colect-2 { animation-delay: 0.7s; }
+.product .colect-3 { animation-delay: 0.9s; }
+
+.product .colect-1 section img,
+.product .colect-2 section img,
+.product .colect-3 section img {
+    width: 350px;
+    height: 350px;
+    background-color: #b18989;
+    cursor: pointer;
+}
+
+.product .colect-1 section h3,
+.product .colect-2 section h3,
+.product .colect-3 section h3 {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.product .colect-1 section p,
+.product .colect-2 section p,
+.product .colect-3 section p {
+    color: rgb(163, 162, 162);
+}
+
+
+.product .colect-1 section img:hover,
+.product .colect-2 section img:hover,
+.product .colect-3 section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 80px rgba(173, 99, 99, 0.3);
+}
+
+.product .colect-1 section h3:hover,
+.product .colect-2 section h3:hover,
+.product .colect-3 section h3:hover {
+    cursor: pointer;
+    color: #FF4400;
+}
+
+::-moz-selection {
+    background-color: #FF4400;
+    color: white;
+}
+
+
+@keyframes moveup {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} 
