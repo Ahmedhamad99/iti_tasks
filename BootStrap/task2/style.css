@@ -1,0 +1,103 @@
+html {
+    scroll-behavior: smooth;
+}
+.landing{
+    background-color: antiquewhite;
+    min-height: calc(100vh - 72px);
+  
+}
+.footer{
+    padding-left:20px ;
+}
+.box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+.box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgba(147, 175, 252, 0.879);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+  }
+.box:hover::before {
+    transform: translateX(0);
+}
+
+
+
+footer  .facebook{
+    background-color: #1877f2;
+}
+footer  .youtube{
+    background-color: #ff0000;
+
+}
+footer  .twitter
+{
+    background-color: hsl(203, 89%, 53%);
+
+}
+footer  .linkedin
+{
+    background-color: #004182;
+
+}
+
+
+nav div ul li a:hover{
+    color: #3d1df293;
+
+}
+
+footer section ul li a:hover{
+    color: #1da1f2;
+}
+
+footer .contacts{
+    margin-top: 300px;
+}
+div  .words{
+    margin-top: 15rem;
+    margin-left: 20rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+
+.slider-d div button{
+    height: 10px !important;
+    border-radius: 50%;
+   
+
+
+}
+
+.vh-50 {
+    height: 50vh; 
+}
+custom-btn {
+    border-radius: 50%; /* Circular navigation buttons */
+    width: 50px;
+    height: 50px;
+}
+/* Custom Style for Bottom Indicators */
+.custom-indicator {
+    background-color: blue !important; /* Primary color */
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.custom-indicator.active {
+    background-color: darkblue !important; /* Darker shade for active */
+    transform: scale(1.2);
+}
