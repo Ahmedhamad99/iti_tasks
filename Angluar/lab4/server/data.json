@@ -1,0 +1,122 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Rollex Watch",
+      "price": 150,
+      "imgUrl": "assets/3.jpg",
+      "category": "electronics",
+      "quantity": 9
+    },
+    {
+      "id": "2",
+      "name": "Apple Watch",
+      "price": 150,
+      "imgUrl": "assets/2.jpg",
+      "category": "electronics",
+      "quantity": 3
+    },
+    {
+      "id": "3",
+      "name": "Patek Philipp",
+      "price": 300,
+      "imgUrl": "assets/3.jpg",
+      "category": "electronics",
+      "quantity": 5
+    },
+    {
+      "id": "5",
+      "name": "Realme C55",
+      "price": 1000,
+      "imgUrl": "assets/1.webp",
+      "category": "electronics",
+      "quantity": 2
+    },
+    {
+      "id": "6",
+      "name": "Galaxy A15",
+      "price": 500,
+      "imgUrl": "assets/1.webp",
+      "category": "electronics",
+      "quantity": 7
+    },
+    {
+      "id": "7",
+      "name": "Iphon 14pro",
+      "price": 2000,
+      "imgUrl": "assets/1.webp",
+      "category": "electronics",
+      "quantity": 2
+    },
+    {
+      "name": "Cotton Jacket",
+      "price": 500,
+      "imgUrl": "assets/6.jpg",
+      "category": "clothing",
+      "quantity": 1,
+      "id": "d429"
+    },
+    {
+      "name": "T-Shirt",
+      "price": 200,
+      "imgUrl": "assets/1.jpg",
+      "category": "clothing",
+      "quantity": 2,
+      "id": "afbb"
+    },
+    {
+      "name": "Cow Boy Hat",
+      "price": 100,
+      "imgUrl": "assets/11.jpg",
+      "category": "clothing",
+      "quantity": 0,
+      "id": "d682"
+    },
+    {
+      "name": "Water Proof Jacket",
+      "price": 500,
+      "imgUrl": "assets/8.jpg",
+      "category": "clothing",
+      "quantity": 4,
+      "id": "5714"
+    },
+    {
+      "name": "Orange",
+      "price": 1,
+      "imgUrl": "assets/product-8.jpg",
+      "category": "foods",
+      "quantity": 2,
+      "id": "75fa"
+    },
+    {
+      "name": "Strawberry",
+      "price": 50,
+      "imgUrl": "assets/blog-5.jpg",
+      "category": "foods",
+      "quantity": 3,
+      "id": "3a0c"
+    },
+    {
+      "name": "Apple",
+      "price": 5,
+      "imgUrl": "assets/product-8.jpg",
+      "category": "foods",
+      "quantity": 1,
+      "id": "db43"
+    },
+    {
+      "name": "Graps",
+      "price": 3,
+      "imgUrl": "assets/blog-5.jpg",
+      "category": "foods",
+      "quantity": 2,
+      "id": "5af1"
+    },
+    {
+      "id": "972b",
+      "name": "phon X",
+      "price": "4",
+      "quantity": "4"
+    }
+  ]
+}
