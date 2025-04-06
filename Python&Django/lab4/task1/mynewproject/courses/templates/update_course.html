@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Update Course: {{ course.name }}</h2>
+
+<form method="post" class="form">
+    {% csrf_token %}
+    
+    {% for field in form %}
+        <div class="form-group">
+            {{ field.label_tag }}
+            <div>
+                {{ field }}
+            </div>
+    {% endfor %}
+    
+    <button type="submit" class="btn btn-primary m-3" href="{% url 'courses' %}">Update</button>
+</form>
+
+<a href="{% url 'courses' %}" class="btn btn-secondary">Cancel</a>
+{% endblock %}

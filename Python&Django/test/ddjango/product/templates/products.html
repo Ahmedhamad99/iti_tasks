@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+{% for prod in pro %}
+<h2><a href="{% url 'product' product_id=prod.id %}">{{ prod.name }}</a></h2>
+    <h1>{{prod.name}}</h1>
+    <p>{{prod.content}}</p>
+    <img src="{{ prod.image.url }}">
+{% endfor %}
+<h1>from products</h1>
+
+{% endblock content %}

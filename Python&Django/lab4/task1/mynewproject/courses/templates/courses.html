@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<a href="{% url 'add_course' %}" class="btn btn-danger btn-sm">Add Course</a>
+
+<div class="text-center  text-dark" style="font-size:30px">Courses Info</div>
+<table class="table">
+   <thead class="thead-dark">
+     <tr>
+       <th scope="col">ID</th>
+       <th scope="col">Title</th>
+       <th scope="col">Instractour</th>
+       <th scope="col">Price</th>
+       <th scope="col">Duration</th>
+       <th scope="col">Action</th>
+     </tr>
+   </thead>
+   <tbody>
+      {% for cors in courses %}
+         <tr>
+            <th scope="row">{{cors.id}}</th>
+            <td>{{cors.name}}</td>
+            <td>{{cors.instructor}}</td>
+            <td>{{cors.duration}}</td>
+            <td>{{cors.price}}</td>
+            <td>
+              <a href="{% url 'course_detail' cors.id %}" class="btn btn-warning btn-sm">View</a>
+              |
+              <a href="{% url 'course_delete' cors.id %}" class="btn btn-danger btn-sm">Delete</a>
+              |
+              <a href="{% url 'update_course' cors.id %}" class="btn btn-danger btn-sm">Update</a>
+            </td>
+         </tr>
+     {% endfor %} 
+     
+    
+   </tbody>
+ </table>
+ 
+
+{% endblock content %}
+
+
+
+
+
+

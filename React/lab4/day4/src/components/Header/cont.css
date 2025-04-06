@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.imageback {
+    width: 100vw;
+    height: 100vh; 
+    background: url('../../assets/image1.jpg') no-repeat center center fixed;
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+
+.imageback h1, .imageback p {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}

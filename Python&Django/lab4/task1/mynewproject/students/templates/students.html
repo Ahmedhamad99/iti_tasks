@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+
+ <div class="text-center  text-dark" style="font-size:30px">Students Info</div>
+ 
+ <div class="container">
+  <a href="{% url 'add_student' %}" class="btn btn-warning btn-sm">Add Stuedent</a>
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Birth Date</th>
+        <th scope="col">Address</th>
+        <th scope="col">Grade</th>
+        <th scope="col">Action</th>
+ 
+      </tr>
+    </thead>
+    <tbody>
+       {% for stu in students %}
+          <tr>
+             <th scope="row">{{stu.id}}</th>
+             <td>{{stu.name}}</td>
+             <td>{{stu.age}}</td>
+             <td>{{stu.data_birth}}</td>
+             <td>{{stu.address}}</td>
+         
+         <td>{{stu.grade}}</td>
+         <td>
+           <a href="{% url 'student_detail' stu.id %}" class="btn btn-warning btn-sm">View</a>
+           |
+           <a href="{% url 'student_delete' stu.id %}" class="btn btn-danger btn-sm">Delete</a>
+         </td>
+ 
+          </tr>
+      {% endfor %} 
+      
+     
+    </tbody>
+  </table>
+  
+ </div>
+
+{% endblock content %}
+
+
+
+
+
