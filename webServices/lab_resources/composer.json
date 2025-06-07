@@ -1,8 +1,0 @@
-{
-    "autoload": {
-        "classmap": ["Models"],
-        "files" :["config.php"]
-    },
-    "require": {
-    }
-}
